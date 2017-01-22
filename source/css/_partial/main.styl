@@ -152,7 +152,7 @@
         text-transform: uppercase;
         float: none;
         min-height: @line-height * 3;
-        max-height: @line-height * 5;
+        max-height: @line-height * 8;
         overflow: visible;
         text-align: center;
         display: -webkit-box;
@@ -168,14 +168,13 @@
         }
     }
     .switch-area{
-        position: relative;
         width: 100%;
         overflow: hidden;
         min-height: 260px;
         font-size: (14/16)rem;
         .switch-wrap{
-            transition: transform .3s ease-in;
             position: relative;
+            transition: transform .3s ease-in;
         }
     }
     .turn-left{
@@ -183,24 +182,19 @@
     }
     .header-nav{
         width: 100%;
-        position: absolute;
         transition: transform .3s ease-in;
     }
     .switch-part{
         width: 100%;
-        position: absolute;
     }
     .switch-part1{
-        left: 0;
     }
     .switch-part2{
-        left: 100%;
         overflow-y: auto;
         max-height: 260px;
         font-size (12/16)rem
     }
     .switch-part3{
-        left: 200%;
         line-height: 1.6;
         overflow-y: auto;
         max-height: 260px;
@@ -216,8 +210,7 @@
         }
     }
     .switch-part4{
-        left: 300%;
-        text-align: left;
+        text-align: center;
         line-height: 30px;
     }
 }
@@ -281,7 +274,7 @@
     -webkit-appearance: none;
     &:hover {
         color: #88acdb;
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
@@ -326,7 +319,7 @@ if hexo-config("github_widget")
     .article-entry .github-widget
         h3::after
             content none
-        .github-box 
+        .github-box
             font-size (13/16)rem
             .github-box-title
                 h3
