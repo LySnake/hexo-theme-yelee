@@ -70,7 +70,7 @@
     }
 
     @media screen and (max-width:1040px) {
-        
+
     }@media screen and (max-width:800px) {
         @import "_partial/mobile"
     }
@@ -119,7 +119,7 @@
             border: 5px solid #88acdb;
             box-shadow: 0 0 1.5em #88acdb;
             animation: profilepic .15s linear infinite alternate;
-            -webkit-animation: profilepic .15s linear infinite alternate; 
+            -webkit-animation: profilepic .15s linear infinite alternate;
         }
         @keyframes profilepic {
             0% {
@@ -152,7 +152,7 @@
         text-transform: uppercase;
         float: none;
         min-height: @line-height * 3;
-        max-height: @line-height * 8;
+        max-height: @line-height * 5;
         overflow: visible;
         text-align: center;
         display: -webkit-box;
@@ -168,6 +168,7 @@
         }
     }
     .switch-area{
+        position: relative;
         width: 100%;
         overflow: hidden;
         min-height: 260px;
@@ -182,19 +183,24 @@
     }
     .header-nav{
         width: 100%;
+        position: absolute;
         transition: transform .3s ease-in;
     }
     .switch-part{
         width: 100%;
+        position: absolute;
     }
     .switch-part1{
+        left: 0;
     }
     .switch-part2{
+        left: 100%;
         overflow-y: auto;
         max-height: 260px;
         font-size (12/16)rem
     }
     .switch-part3{
+        left: 200%;
         line-height: 1.6;
         overflow-y: auto;
         max-height: 260px;
@@ -210,6 +216,7 @@
         }
     }
     .switch-part4{
+        left: 300%;
         text-align: center;
         line-height: 30px;
     }
@@ -245,7 +252,7 @@
             color: rgba(255, 255, 255, .8);
         }
         &:hover {
-            background: rgba(147, 181, 224, .3) !important; 
+            background: rgba(147, 181, 224, .3) !important;
             .fa {
                 color: white;
             }
@@ -343,14 +350,14 @@ if hexo-config("jquery_ui")
 
     body .ui-tooltip
         border 1px solid white
-        
+
 
 if hexo-config("progressBar.on") && hexo-config("progressBar.type") == "minimal"
         bar-color = hexo-config("progressBar.color")
         if bar-color == "blue"
             .pace .pace-progress
                 background #77b6ff
-                box-shadow 0 0 10px rgba(@background, .7) 
+                box-shadow 0 0 10px rgba(@background, .7)
 
 .article-entry ul > li,
 .share,
