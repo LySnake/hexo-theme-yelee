@@ -9,15 +9,15 @@ Yelee: "3.5"
 menu:
   主页: /
   所有文章: /archives/
-  #随笔: /tags/随笔
+  收藏: /archives/collect/
   标签云: /tags/
-  关于我: /about/
+  关于我: /archives/other/aboutme/
 
 # Link to your avatar | 填写头像地址
 avatar: /img/avatar.png
 
 # Small icon of Your site | 站点小图标地址
-favicon: /favicon.png
+favicon: http://moxfive.coding.me/yelee/gitbook/images/favicon.ico
 
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
@@ -28,10 +28,10 @@ favicon: /favicon.png
 ## If your site' url is 'http://yoursite.com/blog', set root_url as '/blog/'
 ## 网站若存放在子目录，请按上面格式填写
 ## https://hexo.io/docs/configuration.html#URL
-root_url: 
+root_url:
 
 # Year of Site Creation | 网站成立年份
-since: 2016
+since: 2017
 
 # Social info. Bar | 社交信息展示
 ## Keep "mailto:" in Email | 设置 Email 时保留 "mailto:"
@@ -40,13 +40,15 @@ since: 2016
 ## https://github.com/hexojs/hexo-generator-feed
 
 subnav:
-  Email: "mailto:123@123.com"
+  Email: "mailto:litaobo619@gmail.com"
   #新浪微博: "sina weibo"
-  GitHub: "#"
+  GitHub: "https://www.github.com/lysnake"
   #V2EX: "#"
-  RSS: "/atom.xml"
+  RSS: "http://atom.xml"
   #知乎: "zhihu"
+  知乎: "http://zhihu.com/people/lysnake"
   #豆瓣: "douban"
+  豆瓣: "https://www.douban.com/people/67265566/"
   #简书: "jianshu"
   #SegmentFault: ""
   #博客园: "cnblogs"
@@ -81,31 +83,31 @@ subnav:
 # Chose ONE as your comment system and keep others disable.
 # 选一个作为网站评论系统，其他保持禁用。
 
-preload_comment: true
+preload_comment: false
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until u click/hover on the bar/icon
 
-show_count: false
+show_count: true
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
 
-disqus: 
+disqus:
   #on: true
-  shortname: 
+  shortname: lysnake
   # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
-  # It is unnecessary to enable disqus here if 
-  # you have set "disqus_shortname" in your site's "_config.yml" 
+  # It is unnecessary to enable disqus here if
+  # you have set "disqus_shortname" in your site's "_config.yml"
 
-duoshuo: 
-  #on: true
-  domain: 
+duoshuo:
+  on: true
+  domain: lysnake
   # 是否开启多说评论，http://duoshuo.com/create-site/
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
 youyan:
   #on: true
-  id: 
+  id: 2124325
   # 是否开启友言评论，http://www.uyan.cc/index.php
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
   # 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
@@ -117,27 +119,27 @@ youyan:
 ## "5": show images form bg-1.jpg to bg-5.jpg in `/yelee/source/background/`
 ## "5": 显示`/yelee/source/background/`文件夹中 bg-1.jpg 到 bg-5.jpg 这5张图片
 ## "0": white-gray background | 淳朴灰白背景
-background_image: 5
+background_image: 9
 
 # Base Font Size | 字号调节
 base_font_size: 16  #px, 16 - 24
 
-## General Color Scheme | 主题配色方案 
+## General Color Scheme | 主题配色方案
 ## 可用值 Value: yilia
-color_scheme: 
+color_scheme:
 
 highlight_style:
-  #on: true
+  on: true
   inline_code: 1  # Value: 0 - 9 可选
-  code_block: 1  # Value: 0 - 4 
+  code_block: 4  # Value: 0 - 4
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
   # 通过 code_block 切换内置代码高亮配色主题
 
 blockquote_style:
-  #on: true
-  blockquote: 1  # Value: 0 - 7 可选
+  on: true
+  blockquote: 2  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 
 # Headings Style | 标题风格
@@ -157,8 +159,8 @@ copyright: true
 toc:
   on: true
   list_number: true # 目录序号
-  max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
-  nowrap: false # Keep title on same line | 目录标题不换行
+  max_depth: 3 # 1 - 6 (h1-h6) 目录最大级数
+  nowrap: true # Keep title on same line | 目录标题不换行
 
 # 是否开启主页及加载头像时的动画效果
 # Animation in Homepage and Loading avatar
@@ -166,10 +168,10 @@ animate: true
 
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
-jquery_ui: false
+jquery_ui: true
 
-# Max width of right cloumn | 限制右侧内容的宽带 
-limit_article_width: 
+# Max width of right cloumn | 限制右侧内容的宽带
+limit_article_width:
   on: false
   max_width: 60 # em
 
@@ -180,15 +182,28 @@ limit_article_width:
 tagcloud: true
 
 # Blogroll, Link exchange | 友情链接
+## 编辑友链
 friends:
-  Hexo: https://hexo.io
-  GitHub: https://pages.github.com/
-  MOxFIVE: http://moxfive.xyz/
+  #site
+  GitHub: https://www.github.com
+  GitBook: https://www.gitbook.com/explore
+  LeetCode: https://leetcode.com
+  segmentfault: https://segmentfault.com
+  #资源site
+  鸟书: http://linux.vbird.org
+  study-area: http://www.study-area.org/menu2.htm
+  #学习site
+  MDN: https://developer.mozilla.org/zh-CN/
+  codepen: http://codepen.io/
+  Bootstrap: http://www.bootcss.com/
+  jQuery: http://www.jquery123.com/
+
+## 关闭友链
 #friends: false
 
 #是否开启“关于我”。
-aboutme: 专注于前端
-#aboutme: false
+#aboutme: true
+aboutme: 但行好事，莫问前程
 
 # Open link in a new tab | 是否在新窗口打开链接
 ## `global` 0: Set separately, 1: Open all in new 2: Open all in current
@@ -218,8 +233,8 @@ ie_updater:
   ## http://outdatedbrowser.com/
 
 # Tab Title Change | 标签页标题切换
-tab_title_change: 
-  on: false
+tab_title_change:
+  on: true
   left_tab_title: '(つェ⊂) 我藏好了哦~ '
   return_tab_title: '(*´∇｀*) 被你发现啦~ '
 
@@ -229,8 +244,8 @@ tab_title_change:
 # Local Site Search | 本地站内搜索
 ## Insatall below plugin to take effect | 使用搜索需先安装对应插件
 ## https://github.com/PaicHyperionDev/hexo-generator-search
-search: 
-  #on: true
+search:
+  on: true
   onload: false
   ## true: get search.xml file when the page has loaded
   ## false: get the file when search box gets focus
@@ -244,9 +259,9 @@ fancybox: true
 mathjax: false
 
 # Socail Share | 是否开启分享
-share: 
+share:
   on: true
-  baidu: true
+  baidu: false
   addthis: false
   addthis_pubid: "ra-56ff76c972fc0cf9"
   ## Go to www.addthis.com/dashboard to get your pubid (in src of Code)
@@ -254,15 +269,15 @@ share:
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
-baidu_site: 
-google_site: 
+baidu_site:
+google_site:
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X
-google_analytics: 
+google_analytics:
 
 # 百度统计 http://sitecenter.baidu.com/sc-web/
 # 查看代码，填入 //hm.baidu.com/hm.js? 之后的内容
-baidu_tongji: 
+baidu_tongji:
 
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
